@@ -1,0 +1,12 @@
+.header__logo{
+    padding: 25px 0px 25px 0px;
+    margin: 0;
+    margin-right: 92px;
+
+    pointer-events: none;
+    color: $primary-header-color;
+}
+
+.header__logo--decoration{
+    color: $accent-color;
+}

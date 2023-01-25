@@ -1,0 +1,37 @@
+.header__contacts{
+    @extend %margin-padding;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+
+    list-style: none;
+}
+
+.contacts__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.contacts__phone,
+.contacts__mail{
+    display: flex;
+    align-items: center;
+
+    color: $primary-text-color;
+    text-decoration: none;
+}
+
+/* svg mail */
+.contacts__envelope{
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+/* svg smartphone */
+.contacts__smartphone{
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}

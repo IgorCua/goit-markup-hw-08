@@ -1,0 +1,50 @@
+.main__our-work{
+    padding-top: 0px;
+    background-color: $background-color-4;
+}
+
+.our-work__header{
+    margin: 0;
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+.our-work__list{
+    @extend %margin-padding;
+    
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.item__container{
+    position: relative;
+}
+.list__text--bottom{
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 27px 0 27px 0;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: $secondary-text-color;
+}
+
+.list__item{
+    margin-bottom: 0;
+    width: 370px;
+}

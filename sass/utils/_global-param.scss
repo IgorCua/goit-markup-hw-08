@@ -1,0 +1,45 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    
+    color: $primary-text-color;
+    background-color: $background-color-4;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $primary-header-color;
+}
+
+a{
+    color: $primary-header-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $tra;
+}
+
+a:hover,
+a:focus,
+svg:focus{
+    color: $accent-color;
+    fill: currentColor; 
+}
+
+button{
+    cursor: pointer;
+}
+.container{
+    width: 1200px;
+    margin: 0;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+img{
+    display: block;
+}

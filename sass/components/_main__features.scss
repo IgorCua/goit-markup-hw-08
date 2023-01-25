@@ -1,0 +1,49 @@
+.main-features__header{
+    visibility: hidden;
+    position: absolute;
+}
+
+.main-features__list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.list__item{
+    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item__div{
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $background-color-3;
+}
+
+.item__svg{
+    width: 70px;
+    height: 70px;
+}
+
+.item__title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.item__text{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    line-height: 1.71;
+}
