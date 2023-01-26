@@ -1,23 +1,77 @@
 .header__contacts{
     @extend %margin-padding;
-    display: inline-block;
-    text-align: center;
-    display: flex;
-
+    // text-align: center;
+    // display: flex;
+    
     list-style: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1140px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+    }
+}
+.contacts__item{
+    &:last-child{
+        @media screen and (max-width: 767px){
+            margin-bottom: 32px;
+        }
+    }
+    &:not(:last-child){
+        // margin-right: 30px;
+        
+        @media screen and (min-width: 768px) and (max-width: 1140px){
+            margin-right: 0;
+        }
+        @media screen and (max-width: 767px){
+        }
+    }
 }
 
-.contacts__item:not(:last-child){
-    margin-right: 30px;
-}
+// .contacts__item:not(:last-child){
+    // margin-right: 30px;
+    
+    // @media screen and (min-width: 768px) and (max-width: 1140px){
+    //     margin-right: 0;
+    //     margin-bottom: 10px;
+    // }
+    // @media screen and (max-width: 767px){
+    // }
+// }
 
 .contacts__phone,
 .contacts__mail{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     color: $primary-text-color;
     text-decoration: none;
+    
+    @media screen and (max-width: 767px){
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: calc(40 / 34);
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+    }
+}
+
+.contacts__mail{
+    @media screen and (max-width: 767px){
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: 0.02em;
+
+    }
 }
 
 /* svg mail */
@@ -26,6 +80,10 @@
     width: 16px;
     height: 12px;
     fill: currentColor;
+
+    @media screen and (max-width: 767px){
+        display: none;
+    }
 }
 
 /* svg smartphone */
@@ -34,4 +92,8 @@
     width: 10px;
     height: 16px;
     fill: currentColor;
+
+    @media screen and (max-width: 767px){
+        display: none;
+    }
 }

@@ -1,6 +1,11 @@
 .main__our-work{
     padding-top: 0px;
     background-color: $background-color-4;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        
+    }
 }
 
 .our-work__header{

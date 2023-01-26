@@ -1,10 +1,19 @@
 .header__logo{
-    padding: 25px 0px 25px 0px;
+    //padding: 25px 0px 25px 0px;
     margin: 0;
-    margin-right: 92px;
-
+    // margin-right: 92px;
     pointer-events: none;
     color: $primary-header-color;
+    
+    @media screen and (min-width: 768px) and (max-width: 1140px){
+        margin-right: 87px;
+    }
+
+    @media screen and (max-width: 767px){
+        .nav__burger-btn.is-open &{
+            visibility: hidden;
+        }
+    }
 }
 
 .header__logo--decoration{

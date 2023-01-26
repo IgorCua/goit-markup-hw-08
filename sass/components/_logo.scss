@@ -4,4 +4,10 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+
+    @media screen and (max-width: 767px){
+        .nav__burger-btn.is-open &{
+            visibility: hidden;
+        }
+    }
 }

@@ -19,44 +19,70 @@
     <header class="header">
       <nav class="header__nav container">
         <a href="" class="logo header__logo"><span class="logo__span header__logo--decoration">Web</span>Studio</a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="" class="nav__link nav__link--current">Studio</a>
-          </li>
-          <li class="nav__item">
-            <a href="./portfolio.html" class="nav__link" target="_self"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__link">Contacts</a>
-          </li>
-        </ul>
-        <ul class="header__contacts">
-          <li class="contacts__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts__link contacts__mail"
-            >
-              <svg class="icon contacts__envelope">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-           </a>
-          </li>
-          <li class="contacts__item">
-            <a
-              href="tel:+12127724150"
-              id="test"
-              class="contacts__link contacts__phone"
-            >
-              <svg class="icon contacts__smartphone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +1 212-772-4150
+        <div class="nav__mobile-menu" data-menu>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="" class="nav__link nav__link--current">Studio</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link" target="_self"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="header__contacts">
+            <li class="contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts__link contacts__mail"
+              >
+                <svg class="icon contacts__envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
             </a>
-          </li>
-        </ul>
+            </li>
+            <li class="contacts__item">
+              <a
+                href="tel:+12127724150"
+                id="test"
+                class="contacts__link contacts__phone"
+              >
+                <svg class="icon contacts__smartphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__mobile-social-links">
+            <li class="mobile-social-links__item">
+              <a href="" class="mobile-social-links__link">Instagram</a>
+            </li>
+            <li class="mobile-social-links__item">
+              <a href="" class="mobile-social-links__link">Twitter</a>
+            </li>
+            <li class="mobile-social-links__item">  
+              <a href="" class="mobile-social-links__link">Facebook</a>
+            </li>
+            <li class="mobile-social-links__item">
+              <a href="" class="mobile-social-links__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="nav__burger-btn" 
+        aria-expanded="false"
+        data-menu-button>
+          <svg class="nav__burger-svg" aria-label="mobile menu">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+          <svg class="nav__exit-svg" data-menu-exit>
+            <use href="./images/icons.svg#icon-exit"></use>
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -112,8 +138,10 @@
                     <use href="./images/icons.svg#icon-checkbox-border"></use>
                   </svg>
                 </span>
-                I agree with the newsletter and accept the
-                <a href="" class="checkbox_link">Terms and Conditions</a>
+                <p class="checkbox__text">
+                  I agree with the newsletter and accept the
+                  <a href="" class="checkbox_link">Terms and Conditions</a>
+                </p>
               </label>
               <button type="submit" class="button main-form__button">Submit</button>
             </form>
@@ -126,7 +154,7 @@
         <div class="container">
           <h2 class="main-features__header">Features</h2>
           <ul class="main-features__list">
-            <li class="list__item">
+            <li class="main-features__list-item">
               <div class="item__div">
                 <svg class="item__svg">
                   <use href="./images/icons.svg#features-icon-1"></use>
@@ -138,7 +166,7 @@
                 develop a customized solution.
               </p>
             </li>
-            <li class="list__item">
+            <li class="main-features__list-item">
               <div class="item__div">
                 <svg class="item__svg">
                   <use href="./images/icons.svg#features-icon-2"></use>
@@ -150,7 +178,7 @@
                 the company: respect your time and respect the agreed deadlines.
               </p>
             </li>
-            <li class="list__item">
+            <li class="main-features__list-item">
               <div class="item__div">
                 <svg class="item__svg">
                   <use href="./images/icons.svg#features-icon-3"></use>
@@ -162,7 +190,7 @@
                 solution development and implementation.
               </p>
             </li>
-            <li class="list__item">
+            <li class="main-features__list-item">
               <div class="item__div">
                 <svg class="item__svg">
                   <use href="./images/icons.svg#features-icon-4"></use>
@@ -508,5 +536,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

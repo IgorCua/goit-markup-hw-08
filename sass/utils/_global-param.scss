@@ -29,10 +29,14 @@ button{
     cursor: pointer;
 }
 .container{
-    width: 1200px;
-    margin: 0;
-    margin: auto;
+    // width: 1200px;
     padding: 0px 15px;
+    margin: auto;
+    
+    @media screen and (max-width: 767px){
+        width: 480px;
+        margin: auto;
+    }
 }
 
 .section{
