@@ -288,8 +288,8 @@ img {
     position: absolute;
     bottom: 0;
     left: 0;
-    -webkit-transform: translateY(34px);
-            transform: translateY(34px);
+    -webkit-transform: translateY(33px);
+            transform: translateY(33px);
     pointer-events: none;
     opacity: 1;
   }
