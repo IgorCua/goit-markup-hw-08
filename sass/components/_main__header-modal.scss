@@ -248,23 +248,22 @@
 .checkbox__text{
     margin: 0;
 
-    font-size: 12px;
-    line-height: calc(14 / 12);
-
     letter-spacing: 0.03em;
-
-    @media screen and (max-width: 1140px){
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 13px;
-        /* identical to box height */
-
-        letter-spacing: 0.03em;
-    }
 
     @media screen and (max-width: 1140px){
         padding-left: 12px;
         text-align: center;
+
+        font-weight: 400;
+        font-size: 11px;
+        line-height: calc(13 / 11);
+
+        letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 1141px){
+        font-size: 14px;
+        line-height: calc(24 / 14);
     }
 }
 
@@ -299,9 +298,9 @@
         background-size: contain;
     }
 
-    // @media screen and (max-width: 1140px) {
-    //     top: -2px;
-    // }
+    @media screen and (min-width: 1140px) {
+        top: 3px;
+    }
 }
 .checkbox__svg:hover{
     cursor: pointer;

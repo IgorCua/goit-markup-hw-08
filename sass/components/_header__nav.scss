@@ -94,6 +94,9 @@
             opacity: 1;
         }
     }
+    @media screen and (min-width: 320px){
+        color: $accent-color;
+    }
  }
 
 // mobile menu container

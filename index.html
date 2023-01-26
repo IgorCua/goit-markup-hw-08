@@ -7,18 +7,23 @@
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--------------------- Header -------------------->
     <header class="header">
       <nav class="header__nav container">
-        <a href="" class="logo header__logo"><span class="logo__span header__logo--decoration">Web</span>Studio</a>
+        <a href="" class="logo header__logo"
+          ><span class="logo__span header__logo--decoration">Web</span>Studio</a
+        >
         <div class="nav__mobile-menu" data-menu>
           <ul class="nav__list">
             <li class="nav__item">
@@ -43,7 +48,7 @@
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
-            </a>
+              </a>
             </li>
             <li class="contacts__item">
               <a
@@ -65,7 +70,7 @@
             <li class="mobile-social-links__item">
               <a href="" class="mobile-social-links__link">Twitter</a>
             </li>
-            <li class="mobile-social-links__item">  
+            <li class="mobile-social-links__item">
               <a href="" class="mobile-social-links__link">Facebook</a>
             </li>
             <li class="mobile-social-links__item">
@@ -73,9 +78,12 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="nav__burger-btn" 
-        aria-expanded="false"
-        data-menu-button>
+        <button
+          type="button"
+          class="nav__burger-btn"
+          aria-expanded="false"
+          data-menu-button
+        >
           <svg class="nav__burger-svg" aria-label="mobile menu">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
@@ -89,50 +97,91 @@
     <!---------------------- Main content --------------------->
     <main class="main">
       <section class="main-header">
-        <h1 class="main-header__title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <h1 class="main-header__title">
+          EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
+        </h1>
         <button type="button" class="main-header__btn" data-modal-open>
           Request our service
         </button>
         <div class="modal-backdrop is-hidden" data-modal>
           <div class="modal-backdrop__modal-container">
-            <button type="button" class="modal-container__button" data-modal-close>
+            <button
+              type="button"
+              class="modal-container__button"
+              data-modal-close
+            >
               <svg class="button__svg modal-container__svg">
                 <use href="./images/icons.svg#icon-exit"></use>
               </svg>
             </button>
-            <p class="modal-container__text">Leave your information and we'll call you back</p>
-            
+            <p class="modal-container__text">
+              Leave your information and we'll call you back
+            </p>
+
             <form class="main-form">
-              
-              <label for="modal-input-name" class="main-form__label">Name</label>
+              <label for="modal-input-name" class="main-form__label"
+                >Name</label
+              >
               <div class="label__container">
-                <input type="text" class="main-form__input" id="modal-input-name" name="user-name" required minlength="3">
+                <input
+                  type="text"
+                  class="main-form__input"
+                  id="modal-input-name"
+                  name="user-name"
+                  required
+                  minlength="3"
+                />
                 <svg class="input__svg">
                   <use href="./images/icons.svg#icon-form-name"></use>
                 </svg>
               </div>
 
-              <label for="modal-input-tel" class="main-form__label">Telephone</label>
+              <label for="modal-input-tel" class="main-form__label"
+                >Telephone</label
+              >
               <div class="label__container">
-                <input type="tel" class="main-form__input" id="modal-input-tel" name="user-number" >
+                <input
+                  type="tel"
+                  class="main-form__input"
+                  id="modal-input-tel"
+                  name="user-number"
+                />
                 <svg class="input__svg">
                   <use href="./images/icons.svg#icon-form-phone"></use>
                 </svg>
               </div>
 
-              <label for="modal-input-mail" class="main-form__label">E-mail</label>
+              <label for="modal-input-mail" class="main-form__label"
+                >E-mail</label
+              >
               <div class="label__container">
-                <input type="email" class="main-form__input" id="modal-input-mail" name="user-mail" required>
+                <input
+                  type="email"
+                  class="main-form__input"
+                  id="modal-input-mail"
+                  name="user-mail"
+                  required
+                />
                 <svg class="input__svg">
                   <use href="./images/icons.svg#icon-form-mail"></use>
                 </svg>
               </div>
 
-              <label for="modal-input-comments" class="main-form__label">Comments</label>
-              <textarea id="modal-input-comments" class="main-form__textarea" placeholder="Enter the text"></textarea>
+              <label for="modal-input-comments" class="main-form__label"
+                >Comments</label
+              >
+              <textarea
+                id="modal-input-comments"
+                class="main-form__textarea"
+                placeholder="Enter the text"
+              ></textarea>
 
               <label for="modal-checkbox" class="main-form__checkbox">
-                <input type="checkbox" id="modal-checkbox" class="checkbox__input">
+                <input
+                  type="checkbox"
+                  id="modal-checkbox"
+                  class="checkbox__input"
+                />
                 <span class="checkbox__span">
                   <svg class="checkbox__svg">
                     <use href="./images/icons.svg#icon-checkbox-border"></use>
@@ -143,7 +192,9 @@
                   <a href="" class="checkbox_link">Terms and Conditions</a>
                 </span>
               </label>
-              <button type="submit" class="button main-form__button">Submit</button>
+              <button type="submit" class="button main-form__button">
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -214,7 +265,8 @@
             <li class="list__item">
               <div class="item__container">
                 <img
-                  src="./images/what-we-do-img.jpg"
+                  srcset="./images/what-we-do-desk-2x 2x.jpg"
+                  src="./images/what-we-do-desk.jpg"
                   alt="programer writing code"
                   class="item__img"
                 />
@@ -224,7 +276,8 @@
             <li class="list__item">
               <div class="item__container">
                 <img
-                  src="./images/what-we-do-img1.jpg"
+                  srcset="./images/what-we-do-1-desk-2x 2x.jpg"
+                  src="./images/what-we-do-1-desk.jpg"
                   alt="programer holding phone"
                   class="item__img"
                 />
@@ -234,13 +287,14 @@
             <li class="list__item">
               <div class="item__container">
                 <img
-                  src="./images/what-we-do-img2.jpg"
+                  srcset="./images/what-we-do-2-desk-2x 2x.jpg"
+                  src="./images/what-we-do-2-desk.jpg"
                   alt="programer holding ipad"
                   class="item__img"
                 />
                 <p class="item__text list__text--bottom">Design Solutions</p>
               </div>
-              </li>
+            </li>
           </ul>
         </div>
       </section>
@@ -252,9 +306,18 @@
           <ul class="our-team__list">
             <li class="our-team__item">
               <img
-                src="./images/our-team-img.jpg"
+                srcset=" 
+                  ./images/our-team-desk.jpg 810w, 
+                  ./images/our-team-desk-2x.jpg 540w,
+                  ./images/our-team-tab-1x.jpg 354w, 
+                  ./images/our-team-tab-2x.jpg 708w,
+                  ./images/our-team-mob-1x.jpg 450w,
+                  ./images/our-team-mob-2x.jpg 900w
+                "
+                src="./images/our-team-desk.jpg"
                 alt="picture of Christopher Walker"
                 class="our-team__img"
+                sizes="(min-width: 1199px) 25vw, (min-width: 768px) 50vw, (min-width: 320px) 100vw, 100vw"
               />
               <div class="our-team__container">
                 <h3 class="our-team__title">Christopher Walker</h3>
@@ -262,28 +325,44 @@
               </div>
               <ul class="our-team__links social-accounts">
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="instagram link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="instagram link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="twitter link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="twitter link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="facebook link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="facebook link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="linkedin link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="linkedin link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -292,35 +371,64 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img src="./images/our-team-img-1.jpg" class="our-team__img" alt="Kylie Evans photo" />
+              <img
+                srcset=" 
+                  ./images/our-team-1-desk.jpg 810w, 
+                  ./images/our-team-1-desk-2x.jpg 540w,
+                  ./images/our-team-1-tab-1x.jpg 354w, 
+                  ./images/our-team-1-tab-2x.jpg 708w,
+                  ./images/our-team-1-mob-1x.jpg 450w,
+                  ./images/our-team-1-mob-2x.jpg 900w
+                "
+                src="./images/our-team-1-desk.jpg"
+                class="our-team__img"
+                alt="Kylie Evans photo"
+                sizes="(min-width: 1199px) 25vw, (min-width: 768px) 50vw, (min-width: 320px) 100vw, 100vw"
+              />
               <div class="our-team__container">
                 <h3 class="our-team__title">Kylie Evans</h3>
                 <p class="our-team__text">Frontend Developer</p>
               </div>
               <ul class="our-team__links social-accounts">
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="instagram link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="instagram link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="twitter link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="twitter link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="facebook link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="facebook link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="linkedin link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="linkedin link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -329,35 +437,64 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img src="./images/our-team-img-2.jpg" class="our-team__img" alt="Ryan Harris Photo" />
+              <img
+                srcset=" 
+                ./images/our-team-2-desk.jpg 810w, 
+                ./images/our-team-2-desk-2x.jpg 540w,
+                ./images/our-team-2-tab-1x.jpg 354w, 
+                ./images/our-team-2-tab-2x.jpg 708w,
+                ./images/our-team-2-mob-1x.jpg 450w,
+                ./images/our-team-2-mob-2x.jpg 900w
+                "
+                src="./images/our-team-2-desk.jpg"
+                class="our-team__img"
+                alt="Ryan Harris Photo"
+                sizes="(min-width: 1199px) 25vw, (min-width: 768px) 50vw, (min-width: 320px) 100vw, 100vw"
+              />
               <div class="our-team__container">
                 <h3 class="our-team__title">Ryan Harris</h3>
                 <p class="our-team__text">Marketing</p>
               </div>
               <ul class="our-team__links social-accounts">
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="instagram link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="instagram link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="twitter link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="twitter link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="facebook link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="facebook link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="linkedin link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="linkedin link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -366,35 +503,64 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img src="./images/our-team-img-3.jpg" class="our-team__img" alt="Tyler Moore photo" />
+              <img
+                srcset=" 
+                ./images/our-team-3-desk.jpg 810w, 
+                ./images/our-team-3-desk-2x.jpg 540w,
+                ./images/our-team-3-tab-1x.jpg 354w, 
+                ./images/our-team-3-tab-2x.jpg 708w,
+                ./images/our-team-3-mob-1x.jpg 450w,
+                ./images/our-team-3-mob-2x.jpg 900w
+              "
+                src="./images/our-team-3-desk.jpg"
+                class="our-team__img"
+                alt="Tyler Moore photo"
+                sizes=" (min-width: 1199px) 25vw,(min-width: 768px) 50vw, (min-width: 320px) 100vw, 100vw"
+              />
               <div class="our-team__container">
                 <h3 class="our-team__title">Tyler Moore</h3>
                 <p class="our-team__text">UI Designer</p>
               </div>
               <ul class="our-team__links social-accounts">
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="instagram link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="instagram link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="twitter link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="twitter link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="facebook link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="facebook link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-accounts__item">
-                  <a href="" class="social-accounts__link" aria-label="linkedin link">
+                  <a
+                    href=""
+                    class="social-accounts__link"
+                    aria-label="linkedin link"
+                  >
                     <svg class="social-accounts__svg">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -462,7 +628,9 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__box">
-          <a href="" class="logo footer__logo"><span class="footer__logo--decoration">Web</span>Studio</a>
+          <a href="" class="logo footer__logo"
+            ><span class="footer__logo--decoration">Web</span>Studio</a
+          >
           <address>
             <ul class="footer__address">
               <li class="address__item">
@@ -492,29 +660,53 @@
           <p class="accounts-box__text">Find us on</p>
           <ul class="footer__social-accounts">
             <li class="social-accounts__item">
-              <a href="" class="social-accounts__link footer__accounts-link--decoration" aria-label="instagram link">
-                <svg class="social-accounts__svg footer_accounts-svg--decoration">
+              <a
+                href=""
+                class="social-accounts__link footer__accounts-link--decoration"
+                aria-label="instagram link"
+              >
+                <svg
+                  class="social-accounts__svg footer_accounts-svg--decoration"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-accounts__item">
-              <a href="" class="social-accounts__link footer__accounts-link--decoration" aria-label="twitter link">
-                <svg class="social-accounts__svg footer_accounts-svg--decoration">
+              <a
+                href=""
+                class="social-accounts__link footer__accounts-link--decoration"
+                aria-label="twitter link"
+              >
+                <svg
+                  class="social-accounts__svg footer_accounts-svg--decoration"
+                >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-accounts__item">
-              <a href="" class="social-accounts__link footer__accounts-link--decoration" aria-label="facebook link">
-                <svg class="social-accounts__svg footer_accounts-svg--decoration">
+              <a
+                href=""
+                class="social-accounts__link footer__accounts-link--decoration"
+                aria-label="facebook link"
+              >
+                <svg
+                  class="social-accounts__svg footer_accounts-svg--decoration"
+                >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-accounts__item">
-              <a href="" class="social-accounts__link footer__accounts-link--decoration" aria-label="linkedin link">
-                <svg class="social-accounts__svg footer_accounts-svg--decoration">
+              <a
+                href=""
+                class="social-accounts__link footer__accounts-link--decoration"
+                aria-label="linkedin link"
+              >
+                <svg
+                  class="social-accounts__svg footer_accounts-svg--decoration"
+                >
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -524,7 +716,12 @@
         <div class="footer__form-container">
           <p class="form-container__text">Subscribe to the newsletter</p>
           <form class="form-container__form-subscribe">
-            <input class="form-subscribe__input" type="email" name="email" placeholder="E-mail">
+            <input
+              class="form-subscribe__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
             <button type="submit" class="button form-subscribe__button">
               Suscribe
               <svg class="button__svg footer__form-btn--svg">
