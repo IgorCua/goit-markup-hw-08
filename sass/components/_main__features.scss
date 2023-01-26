@@ -10,20 +10,23 @@
     margin: 0;
     padding: 0;
 
-    @media screen and (max-width: 767px){
-        width: 100%;
-    }
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
 }
 
 .main-features__list-item{
-    // width: 270px;
     background-repeat: no-repeat;
     background-position: center;
     
+    @media screen and (min-width: 1141px) {
+        width: 270px;
+    }
     @media screen and (max-width: 1140px) {
         width: 354px;
     }

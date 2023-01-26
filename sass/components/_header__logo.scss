@@ -15,6 +15,10 @@
             visibility: hidden;
         }
     }
+
+    @media screen and (min-width: 1141px){
+        margin-right: 92px;
+    }
 }
 
 .header__logo--decoration{

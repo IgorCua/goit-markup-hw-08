@@ -13,6 +13,11 @@
     margin-bottom: 50px;
 
     text-align: center;
+
+    @media screen and (min-width: 1141px){
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
 }
 
 .our-work__list{

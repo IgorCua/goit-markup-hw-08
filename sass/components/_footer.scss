@@ -25,6 +25,9 @@
 
 .footer__box{
     //margin-right: 70px;
+    @media screen and (min-width: 1141px){
+        margin-right: 70px;
+    }
 }
 
 .footer__logo{
@@ -72,6 +75,9 @@
 
 .footer__accounts-box{
     // margin-right: 93px;
+    @media screen and (min-width: 1141px){
+        margin-right: 93px;
+    }
 }
 
 /* social accounts */
@@ -136,6 +142,9 @@
     display: flex;
     // gap: 12px;
 
+    @media screen and (min-width: 1141px){
+        gap: 12px;
+    }
     @media screen and (max-width: 1140px){
         flex-direction: column;
     }

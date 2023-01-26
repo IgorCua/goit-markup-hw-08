@@ -11,6 +11,11 @@
     text-align: center;
     letter-spacing: 0.03em;
 
+    @media screen and (min-width: 1141px){
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
+
     @media screen and (max-width: 1140px){
         font-style: normal;
         font-weight: 700;
@@ -27,6 +32,10 @@
     list-style: none;
 
     text-align: center;
+
+    @media screen and (min-width: 1141px){
+    }
+
     @media screen and (max-width: 1140px){
         flex-wrap: wrap;
         gap: 30px;
@@ -63,7 +72,8 @@
 
 .our-team__img{
     // width: 270px;
-    @media screen and (max-width: 1140px){
+    
+    @media screen and (min-width: 320px){
         width: 100%;
     }
 }
@@ -99,5 +109,7 @@
     margin: 0;
     // margin-bottom: 30px;
     padding: 0 32px;
-
+    @media screen and (min-width: 1141px){
+        margin-bottom: 30px;
+    }
 }
