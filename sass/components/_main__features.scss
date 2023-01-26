@@ -6,13 +6,14 @@
 .main-features__list{
     // display: flex;
     list-style: none;
-    gap: 30px;
+    // gap: 30px;
     margin: 0;
     padding: 0;
 
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     @media screen and (max-width: 767px){
@@ -30,6 +31,11 @@
     @media screen and (max-width: 1140px) {
         width: 354px;
     }
+
+    @media screen and (max-width: 767px){
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .item__div{
@@ -46,7 +52,7 @@
     }
 
     @media screen and (max-width: 767px){
-        width: 450px;
+        width: 100%;
     }
    
 }

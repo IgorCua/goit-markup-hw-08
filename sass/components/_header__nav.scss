@@ -98,6 +98,11 @@
     &.is-open{
        display: block;
     }
+    @media screen and (min-width: 768px){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     @media screen and (max-width: 767px){
         position: absolute;
         padding: 48px 0px 48px 40px;
@@ -112,11 +117,12 @@
         z-index: 9998;
         display: none;
     }
-
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 479px){
+        padding: 60px 15px;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        display: none;
     }
 }
 
@@ -128,7 +134,10 @@
     @media screen and (min-width: 767px){
         display: none;
     }
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 479px){
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -139,6 +148,10 @@
 
     &:not(:first-child){
         padding-left: 10px;
+    }
+
+    &:last-child{
+        margin-top: 10px;
     }
 }
 

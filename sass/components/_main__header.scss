@@ -19,7 +19,7 @@
     }
 
     @media screen and(max-width: 1140px){
-        padding: 118px 60px 118px 60px;
+        padding: 118px 0;
     }
 }
 
@@ -41,12 +41,15 @@
         width: 696px;
         font-size: 44px;
     }
-    @media screen and (min-width: 320px) and (max-width: 1140px) {
+    @media screen and (min-width: 480px) and (max-width: 1140px) {
         width: 360px;
 
         font-style: normal;
         font-size: 26px;
         line-height: calc(42 / 26);
+    }
+    @media screen and (max-width: 479px){
+        width: 100%;
     }
 }
 

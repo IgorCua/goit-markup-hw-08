@@ -1,6 +1,6 @@
 .main-customers{
     @media screen and (max-width: 767px){
-        width: 450px;
+        width: 100%;
         margin: auto;
     }
 }
@@ -25,6 +25,9 @@
         font-size: 28px;
         line-height: calc(33 / 28);
 
+    }
+    @media screen and (max-width: 479px){
+        text-align: center;
     }
 }
 .main-customers__list{
@@ -74,6 +77,11 @@
 
     @media screen and (max-width: 767px){
         width: 210px;
+        height: 92px;
+    }
+
+    @media screen and (max-width: 469px){
+        width: 130px;
         height: 92px;
     }
     
