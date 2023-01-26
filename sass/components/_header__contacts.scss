@@ -27,6 +27,7 @@
         
         @media screen and (min-width: 768px) and (max-width: 1140px){
             margin-right: 0;
+            margin-bottom: 10px;
         }
         @media screen and (max-width: 767px){
         }
@@ -46,9 +47,6 @@
 
 .contacts__phone,
 .contacts__mail{
-    // display: flex;
-    // align-items: center;
-
     color: $primary-text-color;
     text-decoration: none;
     
@@ -60,6 +58,10 @@
         /* identical to box height */
 
         letter-spacing: 0.02em;
+    }
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -83,6 +85,9 @@
 
     @media screen and (max-width: 767px){
         display: none;
+    }
+    @media screen and (max-width: 1140px){
+        margin-right: 8px;
     }
 }
 

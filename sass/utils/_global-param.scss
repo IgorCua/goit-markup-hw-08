@@ -29,13 +29,19 @@ button{
     cursor: pointer;
 }
 .container{
-    // width: 1200px;
     padding: 0px 15px;
     margin: auto;
     
+    @media screen and (min-width: 1141px){
+        width: 1200px;
+    }
+
+    @media screen and (max-width: 1140px){
+        width: 768px;
+    }
+
     @media screen and (max-width: 767px){
         width: 480px;
-        margin: auto;
     }
 }
 
