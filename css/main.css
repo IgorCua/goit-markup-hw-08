@@ -238,6 +238,11 @@ img {
     margin-bottom: 300px;
   }
 }
+@media screen and (max-width: 767px) {
+  .nav__list {
+    margin-bottom: 250px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .nav__item:not(:last-child) {
@@ -361,10 +366,6 @@ img {
 .mobile-social-links__item:not(:first-child) {
   padding-left: 10px;
 }
-.mobile-social-links__item:last-child {
-  margin-top: 10px;
-}
-
 .mobile-social-links__link {
   padding-right: 10px;
   font-style: normal;
