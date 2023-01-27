@@ -34,9 +34,13 @@
     margin-bottom: 20px;
     display: block;
 
-    text-align: center;
+    // text-align: center;
     pointer-events: none;
     color: $secondary-text-color;
+
+    @media screen and (max-width: 1140px) {
+        text-align: center;
+    }
 }
 .footer__logo--decoration{
     color: $accent-color;
@@ -99,7 +103,7 @@
     margin: 0;
     margin-bottom: 20px;
 
-    text-align: center;
+    // 
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -108,6 +112,10 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+    @media screen and (max-width: 1140px){
+        text-align: center;
+    }
 }
 .footer__accounts-link--decoration{
     background: rgba(255, 255, 255, 0.1);
@@ -146,7 +154,6 @@
 
 .form-container__form-subscribe {
     display: flex;
-    // gap: 12px;
 
     @media screen and (min-width: 1141px){
         gap: 12px;

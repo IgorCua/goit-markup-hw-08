@@ -97,7 +97,7 @@
     @media screen and (min-width: 320px){
         color: $accent-color;
     }
-
+}
 // mobile menu container
 .nav__mobile-menu{
     &.is-open{
@@ -209,6 +209,7 @@
         display: none;
     }
 }
+
 .nav__exit-svg{
     display: none;
     width: 19px;
